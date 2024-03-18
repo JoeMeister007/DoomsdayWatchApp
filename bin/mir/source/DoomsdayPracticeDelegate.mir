@@ -1,0 +1,69 @@
+[ @file = "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\DoomsdayPracticeDelegate.mc"; @line = 1; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\DoomsdayPracticeDelegate.mc"; @line = 2; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\DoomsdayPracticeDelegate.mc"; @line = 4; ]
+class DoomsdayPracticeDelegate extends WatchUi.BehaviorDelegate{
+    [ @file = "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\DoomsdayPracticeDelegate.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\DoomsdayPracticeDelegate.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\DoomsdayPracticeDelegate.mc"; @line = 5; ]
+    function initialize() as Void {
+C_Users_Joey_Documents_GitHub_DoomsdayWatchApp_source_DoomsdayPracticeDelegate_mc_5_26_start:
+[ "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\DoomsdayPracticeDelegate.mc" 6 8 ]
+        %tmp.1 = getm $.Toybox.WatchUi;
+        %tmp.2 = getv %tmp.1 :BehaviorDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_Joey_Documents_GitHub_DoomsdayWatchApp_source_DoomsdayPracticeDelegate_mc_5_26_stop:
+    }
+    [ @file = "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\DoomsdayPracticeDelegate.mc"; @line = 9; ]
+    function onSelect() {
+C_Users_Joey_Documents_GitHub_DoomsdayWatchApp_source_DoomsdayPracticeDelegate_mc_9_24_start:
+[ "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\DoomsdayPracticeDelegate.mc" 10 8 ]
+        [ "C_Users_Joey_Documents_GitHub_DoomsdayWatchApp_source_DoomsdayPracticeDelegate_mc_9_24_start" "C_Users_Joey_Documents_GitHub_DoomsdayWatchApp_source_DoomsdayPracticeDelegate_mc_9_24_stop" ]
+        %menu.1 = local;
+        %tmp.3 = getm $.Toybox.WatchUi;
+        %tmp.4 = getv function ? %tmp.3 :Menu;
+        %tmp.1 = newc %tmp.4 ();
+        lputv %menu.1 %tmp.1;
+[ "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\DoomsdayPracticeDelegate.mc" 11 8 ]
+        %tmp.5 = lgetv %menu.1;
+        %tmp.6 = getv function %tmp.5 :addItem;
+        %tmp.7 = "Date";
+        %tmp.9 = const :date;
+        invoke %tmp.5 %tmp.6(%tmp.7, %tmp.9);
+[ "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\DoomsdayPracticeDelegate.mc" 12 8 ]
+        %tmp.10 = lgetv %menu.1;
+        %tmp.11 = getv function %tmp.10 :addItem;
+        %tmp.12 = "Year";
+        %tmp.14 = const :year;
+        invoke %tmp.10 %tmp.11(%tmp.12, %tmp.14);
+[ "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\DoomsdayPracticeDelegate.mc" 13 8 ]
+        %tmp.15 = lgetv %menu.1;
+        %tmp.16 = getv function %tmp.15 :addItem;
+        %tmp.17 = "Century";
+        %tmp.19 = const :century;
+        invoke %tmp.15 %tmp.16(%tmp.17, %tmp.19);
+[ "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\DoomsdayPracticeDelegate.mc" 14 8 ]
+        %tmp.20 = getm $.Toybox.WatchUi;
+        %tmp.21 = getv function %tmp.20 :pushView;
+        %tmp.23 = lgetv %menu.1;
+        %tmp.27 = getv ? :MainMenuDelegate;
+        %tmp.24 = newc %tmp.27 ();
+        %tmp.28 = getm $.Toybox.WatchUi;
+        %tmp.29 = getv %tmp.28 :SLIDE_IMMEDIATE;
+        invoke %tmp.20 %tmp.21(%tmp.23, %tmp.24, %tmp.29);
+[ "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\DoomsdayPracticeDelegate.mc" 15 8 ]
+        %tmp.30 = true;
+        ret %tmp.30;
+C_Users_Joey_Documents_GitHub_DoomsdayWatchApp_source_DoomsdayPracticeDelegate_mc_9_24_stop:
+    }
+}
+[ @file = "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\DoomsdayPracticeDelegate.mc"; @line = 1; ]
+<init> {
+}

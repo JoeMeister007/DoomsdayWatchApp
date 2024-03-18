@@ -1,0 +1,69 @@
+[ @file = "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\MainMenuDelegate.mc"; @line = 1; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\MainMenuDelegate.mc"; @line = 3; ]
+class MainMenuDelegate extends WatchUi.MenuInputDelegate{
+    [ @file = "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\MainMenuDelegate.mc"; @line = 3; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\MainMenuDelegate.mc"; @line = 3; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\MainMenuDelegate.mc"; @line = 4; ]
+    function initialize() as Void {
+C_Users_Joey_Documents_GitHub_DoomsdayWatchApp_source_MainMenuDelegate_mc_4_26_start:
+[ "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\MainMenuDelegate.mc" 5 8 ]
+        %tmp.1 = getm $.Toybox.WatchUi;
+        %tmp.2 = getv %tmp.1 :MenuInputDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_Joey_Documents_GitHub_DoomsdayWatchApp_source_MainMenuDelegate_mc_4_26_stop:
+    }
+    [ @file = "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\MainMenuDelegate.mc"; @line = 8; ]
+    function onMenuItem(item) {
+C_Users_Joey_Documents_GitHub_DoomsdayWatchApp_source_MainMenuDelegate_mc_8_30_start:
+[ "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\MainMenuDelegate.mc" 9 8 ]
+        %tmp.2 = lgetv %item;
+        push %tmp.2;
+C_Users_Joey_Documents_GitHub_DoomsdayWatchApp_source_MainMenuDelegate_mc_9_8_switchStmtBegin:
+[ "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\MainMenuDelegate.mc" 10 12 ]
+        %tmp.3 = dup %tmp.2;
+        %tmp.5 = const :date;
+        %tmp.6 = getv function %tmp.3 :equals;
+        %tmp.7 = invoke %tmp.3 %tmp.6 (%tmp.5);
+        bt %tmp.7 @C_Users_Joey_Documents_GitHub_DoomsdayWatchApp_source_MainMenuDelegate_mc_10_12_switchCase;
+[ "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\MainMenuDelegate.mc" 12 12 ]
+        %tmp.8 = dup %tmp.2;
+        %tmp.10 = const :year;
+        %tmp.11 = getv function %tmp.8 :equals;
+        %tmp.12 = invoke %tmp.8 %tmp.11 (%tmp.10);
+        bt %tmp.12 @C_Users_Joey_Documents_GitHub_DoomsdayWatchApp_source_MainMenuDelegate_mc_12_12_switchCase;
+[ "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\MainMenuDelegate.mc" 14 12 ]
+        %tmp.13 = dup %tmp.2;
+        %tmp.15 = const :century;
+        %tmp.16 = getv function %tmp.13 :equals;
+        %tmp.17 = invoke %tmp.13 %tmp.16 (%tmp.15);
+        bt %tmp.17 @C_Users_Joey_Documents_GitHub_DoomsdayWatchApp_source_MainMenuDelegate_mc_14_12_switchCase;
+[ "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\MainMenuDelegate.mc" 16 12 ]
+        goto @C_Users_Joey_Documents_GitHub_DoomsdayWatchApp_source_MainMenuDelegate_mc_9_8_defaultCodeBegin;
+C_Users_Joey_Documents_GitHub_DoomsdayWatchApp_source_MainMenuDelegate_mc_10_12_switchCase:
+[ "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\MainMenuDelegate.mc" 11 16 ]
+        goto @C_Users_Joey_Documents_GitHub_DoomsdayWatchApp_source_MainMenuDelegate_mc_9_8_switchStmtEnd;
+C_Users_Joey_Documents_GitHub_DoomsdayWatchApp_source_MainMenuDelegate_mc_12_12_switchCase:
+[ "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\MainMenuDelegate.mc" 13 16 ]
+        goto @C_Users_Joey_Documents_GitHub_DoomsdayWatchApp_source_MainMenuDelegate_mc_9_8_switchStmtEnd;
+C_Users_Joey_Documents_GitHub_DoomsdayWatchApp_source_MainMenuDelegate_mc_14_12_switchCase:
+[ "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\MainMenuDelegate.mc" 15 16 ]
+        goto @C_Users_Joey_Documents_GitHub_DoomsdayWatchApp_source_MainMenuDelegate_mc_9_8_switchStmtEnd;
+C_Users_Joey_Documents_GitHub_DoomsdayWatchApp_source_MainMenuDelegate_mc_16_12_switchCase:
+C_Users_Joey_Documents_GitHub_DoomsdayWatchApp_source_MainMenuDelegate_mc_9_8_defaultCodeBegin:
+[ "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\MainMenuDelegate.mc" 17 16 ]
+        goto @C_Users_Joey_Documents_GitHub_DoomsdayWatchApp_source_MainMenuDelegate_mc_9_8_switchStmtEnd;
+C_Users_Joey_Documents_GitHub_DoomsdayWatchApp_source_MainMenuDelegate_mc_9_8_switchStmtEnd:
+        pop;
+C_Users_Joey_Documents_GitHub_DoomsdayWatchApp_source_MainMenuDelegate_mc_8_30_stop:
+    }
+}
+[ @file = "C:\Users\Joey\Documents\GitHub\DoomsdayWatchApp\source\MainMenuDelegate.mc"; @line = 1; ]
+<init> {
+}
